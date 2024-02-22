@@ -1,0 +1,36 @@
+{
+    "elements": [ 
+                    {"element": "h1", "name": "Heading 1", "application": "Main Page Heading"},
+                    {"element": "h2", "name": "Heading 2","application": "Section Headings"},
+                    {"element": "h3", "name": "Heading 3", "application": "Article Headings"},
+                    {"element": "p", "name": "Paragraph", "application": "Paragraphs"},
+                    {"element": "a", "name": "Anchor", "application": "links"}
+                ],                
+
+    "font-families": [
+                        {"name": "Arial", "type": "San Serif", 
+                        "applications": ["headings","text content","text (informal)"]},
+                        {"name": "Times New Roman", "type": "Serif", 
+                        "applications": ["text (formal)","text (academic)","text (jourmalism)"]},
+                        {"name": "Courier New", "type": "Monospaced", 
+                        "applications": ["code","retro tech","military look"]} 
+                    ],
+
+    "colors": [ 
+                {"name": "Black", "hex": "#000000", "applications":["body background (technical content)","text color (formal)"]},
+                {"name": "Perwinkle", "hex": "#3F61BF", "applications":["anchor text","button background"]},
+                {"name": "Mainframe-Green", "hex": "#7FFF00", "applications":["consonle output","hovers"]},
+                {"name": "White", "hex": "#FFFFFF", "applications":["text background (formal)", "headintg Text (solid/dark background)"]},
+                {"name": "Gray", "hex": "#7F7F7F", "applications":["borders","'X' close elements"]},
+                {"name": "Stoplight-Yellow", "hex": "#FFFF00", "applications":["extreme text highlighting"]},
+                {"name": "Red", "hex": "#FF0000", "applications":["errors (foreground)"]},
+                {"name": "Blue", "hex": "#0000FF", "applications":["anchors"]} 
+            ],
+
+    "quotes": [  
+                {"quote": "Reason cannot establish values, and its belief that it can is the stupidiest and most pernicious illusion.", "source": "Allan Bloom" },
+                {"quote": "Nobody ever went broke underestimating the taste of the American public", "source": "H. L. Mencken"},
+                {"quote": "Media is just a word that has come to mean bad journalism.", "source": "Graham Greene" },
+                {"quote": "Leaving sex to the feminists is like letting your dog vacation at the taxidermist.", "source": "Camille Paglia"}
+            ]
+}

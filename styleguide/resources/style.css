@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+    font-size: 12pt;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24pt;
+    color: white;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: lightblue;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: white;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 12pt;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+table {
+    margin: 4ch 2ch;
+}
+
+td {
+    padding: 5px 10px; 
+}
+
+.color-section {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.element-section {
+    width: 85%;
+    margin: auto;
+}
+
+.font-section {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.section-head {
+    margin: 1ch 5%;
+}
+
+.attribute {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    width:25%;
+}
+
+.value {
+    color: white;
+    width: 75%
+}
+
+.color-container {
+    display: flex;
+    justify-content: center;
+    border: 1px dotted white;
+    width: 40%;
+    padding: 0px 10px;
+}
+
+.color-chip {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border: 1px dotted white;
+}
+
+.color-attributes {
+    flex: auto;
+    width: 75%;
+}
+
+.element {
+    display: flex; 
+    align-items: center;
+    text-align: left;
+    border: 1px dotted white;
+    width: 100%;
+    height: 80px;
+    padding: 0px 5px;
+}
+
+.element-style {
+    margin: 4ch 4ch;
+}
+
+.element-style p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2ch;
+    color: #7FFF00;
+}
+
+.font-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.font-container p {
+    font-size: 16pt;
+}
+
+.font {
+    width: 50%;
+    border: 1px dotted white;
+    padding: 0px 10px;
+}
+
+.font-text {
+    width: 50%;
+    border: 1px dotted white;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.font-text p {
+    color: #B0B0F0;
+}
+

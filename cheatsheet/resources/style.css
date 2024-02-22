@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header h1 {
+    font-size: 18pt;
+    text-align: left;
+    margin: 1ch;
+    border: 1ps dotted lightblue;
+}
+
+.article h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    margin: 2ch 1ch;
+}
+
+.article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    margin: 1ch;
+}
+
+.article table {
+    width: 85%;
+    margin: 1ch 4ch;
+}
+
+.article table td {
+    border: 1px dotted rgba(200,200,255,0.75);
+    padding: 1ch;
+}
+
+.article table row {
+
+}
+
+.attribute {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    color: green;
+    width: 15%;
+    text-align: left;
+}
+
+.attribute-text {
+    font-size: 12pt;
+    color: white;
+    width: 85%;
+    text-align: left;
+}
+

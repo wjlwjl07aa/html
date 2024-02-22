@@ -1,0 +1,133 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    text-align: center;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.header{
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 69px;
+    left: 0px;
+    width: 100%;
+    margin: 0 20px;
+    border-bottom: 1px solid seashell;
+}
+
+.header.logo {
+    position: relative;
+    height: 50px;
+    width: 157px;
+    border: 0px; 
+}
+
+.header.navbar {
+    position: relative;
+    flex-grow: 1;
+    justify-content: right;
+    padding-right: 20px;
+    height: 50px;
+    border: 0px;
+}
+
+.header.navbar li {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.header.navbar a {
+    color: seashell;
+}
+
+
+.header.navbar a:hover {
+    color: #FF7F7F;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    top: 72px;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: black;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 700px; 
+    background-image: url("img-mission-background.jpg");
+}
+
+
+.hero-mission {
+    width: 1200px;
+    background-color: black;
+}
+
+.teas {
+    width: 1000px; 
+}
+
+.tea-container {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.tea-img {
+    width: 300px; 
+    height: 200px; 
+    margin-bottom: 10px;
+}
+
+.tea-box {
+    width: 300px;
+    margin: 10px 10px;
+}
+
+.locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url("img-locations-background.jpg");
+}
+
+.locations-container {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 980;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 15px 40px;
+    background-color: black;
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: left; 
+    margin-top: 30px;
+}
