@@ -13,8 +13,10 @@ body {
 
 .header {
   position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 8rem; 
   width: 100%;
   border-bottom: 1px solid red;
@@ -40,17 +42,17 @@ body {
   position: relative;
   display: inline-flex;
   justify-content: flex-end;
-  font-family: 'Neuton';
-  font-size: 2rem;
+  flex-grow: 1;
+  font-family: 'Roboto';
+  font-size: 1.25rem;
   font-weight: 300;
-  letter-spacing: .25rem;
   color: black;
   padding: 0 1rem;
   background: rgba(0,0,0,0.1);
 }
 
 .header nav li {
-  margin: 0px 1rem;
+  margin: 0px 0.5rem;
   display: inline-block;
 }
 
@@ -65,11 +67,25 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
+  .header {
+    height: 6rem;
+  }
+
   .header .logo h1 {
     font-size: 2.5rem;
   }
   .header nav {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .header .logo h1 {
+    font-size: 1.75rem;
+  }
+
+  .header nav {
+    font-size: 1rem;
   }
 }
 
@@ -111,10 +127,10 @@ body {
 .main h3 {
   font-family: Roboto;
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2rem;
   margin: 0.2rem;
-  color: #7000FF;
+  color: #837ea8;
   text-align: center;
 } 
 
@@ -146,7 +162,7 @@ body {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 740px) {
 
   .main h1 {
     font-size: 2.75rem;
@@ -166,7 +182,25 @@ body {
 
 }
 
+@media only screen and (max-width: 400px) {
 
+  .main h1 {
+    font-size: 2.25rem;
+  }
+
+  .main h2 {
+    font-size: 1rem;
+  }
+
+  .main h3 {
+    font-size: 0.75rem;
+  }
+
+  .main p {
+    font-size: 0.85rem;
+  }
+
+}
 /* ========================================================================
     Mission  section
   ========================================================================= */
@@ -174,7 +208,7 @@ body {
 .mission-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 18rem;
   margin: 2rem;
   border: 2px dotted red;
@@ -200,7 +234,6 @@ body {
   text-align: center;
   padding: 1rem;
   width: 75%;
-  height: 75%;
   margin: 0px;
   border: none;
   font-size: 1.75rem;
@@ -233,7 +266,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 700x) {
+@media only screen and (max-width: 740px) {
   .mission-section {
     height: 14rem;
   }
@@ -243,6 +276,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .mission-section {
+    height: 14rem;
+  }
+
+  .mission .center {
+    font-size: 0.75rem;
+  }
+}
 
 /* ========================================================================
     Product section
@@ -307,6 +349,12 @@ body {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 740px) {
+  .product {
+    width: 80%;
+  }
+}
+
 /* ========================================================================
     Team section
   ========================================================================= */
@@ -367,6 +415,12 @@ body {
 
 }
 
+@media only screen and (max-width: 740px) {
+  .team-member {
+    width: 80%;
+  }
+}
+
 /* ========================================================================
     Footer section
   ========================================================================= */
@@ -381,4 +435,8 @@ body {
   margin-top: 0px;      /* Margins don't collapse on last div?? */
   background-image: url("../images/Stamp_US_1966_5c_Cassatt_with_Zippy.jpg");
   background-size: cover;
+}
+
+.footer a {
+  color: #3700ff;
 }
