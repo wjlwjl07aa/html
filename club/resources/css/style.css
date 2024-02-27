@@ -1,0 +1,240 @@
+
+/* ----------------------------------------------------------------------------
+    Global (html) Section
+----------------------------------------------------------------------------- */
+
+html {
+  font-size: 16px;
+}
+
+/* ----------------------------------------------------------------------------
+    Body Section
+----------------------------------------------------------------------------- */
+body {
+  font-family: 'Patrick Hand SC';    
+  background-color: #80FF80;
+}
+
+body h1 {
+  font-size: 3rem;
+}
+
+body h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.75rem 0rem;
+  color: #000040;
+  text-shadow: 2px 2px 5px #8080FF;
+}
+
+body h3 {
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin: 0.75rem 0rem;
+  color: #000080;
+}
+
+body h4 {
+  font-size: 1.5 rem;
+  font-weight: 600;
+  margin: 0.75rem 0rem;
+}
+
+body p {
+  font-size: 1rem;
+  color: #000040;
+}
+
+/* body Media queries */
+
+@media only screen and (max-width: 1000px) {
+  body h1 {
+    font-size: 2.5rem;
+  }
+
+  body h2 {
+    font-size: 1.5rem;
+  }
+
+  body h3 {
+    font-size: 1.5rem;
+  }
+
+  body h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  body h1 {
+    font-size: 2rem;
+  }
+
+  body h2 {
+    font-size: 1.25rem;
+  }
+
+  body h3 {
+    font-size: 1rem;
+  }
+
+  body h4 {
+    font-size: 0.85rem;
+  }
+
+  body p {
+    font-size: 0.75;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+    Header Section
+----------------------------------------------------------------------------- */
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 0.5rem;
+    top: 0px;
+    width: 100%;
+    height: 6rem;
+    z-index: 5;
+    background-color: rgba(80,255,80,1.0);
+}
+
+.header .logo {
+  position: relative;
+  font-family: Englebert;
+  height: 4rem;
+}
+
+.header nav {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+  font-size: 1.5rem;
+  width: 65%;
+  padding: 0px 1rem;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.header li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.header nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* 
+:target::before {
+  content: " ";
+  display: block;
+  height: 6rem; 
+  margin: -6rem 0 0; 
+}
+*/
+
+/* ----------------------------------------------------------------------------
+    Main Section
+----------------------------------------------------------------------------- */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 8.5rem;
+ /* background-image: url("https://upload.wikimedia.org/wikipedia/en/c/c4/Zap_Comix1.jpg");
+  background-size: contain;
+*/
+}
+
+/* ----------------------------------------------------------------------------
+    Charter Section 
+----------------------------------------------------------------------------- */
+.charter {
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  border: 2px dotted #00407F;
+  border-radius: 3%;
+  align-items: center;
+  scroll-margin-top: 6.5rem;
+  opacity: 0.85;
+}
+
+
+
+/* ----------------------------------------------------------------------------
+    Pantheon Section
+----------------------------------------------------------------------------- */
+.pantheon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  scroll-margin-top: 6.5rem; 
+  padding: 1rem 1rem;
+  border: 2px dotted #000040;
+  border-radius: 3%;
+  width: 100%;
+}
+
+.pantheon .items {
+  border: none;
+}
+
+.pantheon .title {
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  text-align: center;
+}
+
+.pantheon .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 45%;
+  border: none;
+}
+
+.pantheon .image-container {
+  max-width: 100%;
+  width: 80%;
+  height: auto; 
+  overflow: hidden;
+  border: none;
+}
+
+.pantheon img {
+  display: block;
+  min-width: 16.5rem;
+  max-width: 16.5rem;
+  width: 16.5 rem;
+  height: 23 rem;
+  border: none;
+}
+
+.pantheon h3 {
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------------------
+    Members Section
+----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------
+    Footer Section
+----------------------------------------------------------------------------- */
