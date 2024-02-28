@@ -23,15 +23,16 @@ body h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0.75rem 0rem;
-  color: #000040;
-  text-shadow: 2px 2px 5px #8080FF;
+  color: #080850;
+  text-shadow: 3px 3px 5px darkgreen;
 }
 
 body h3 {
   font-size: 2.0rem;
   font-weight: 700;
-  margin: 0.75rem 0rem;
-  color: #000080;
+  margin: 0.125rem 0rem;
+  color: #2626e2;
+  text-shadow: 3px 3px 5px darkgreen;
 }
 
 body h4 {
@@ -152,6 +153,7 @@ body p {
   justify-content: space-around;
   position: relative;
   top: 8.5rem;
+  margin: 1rem 2rem;
  /* background-image: url("https://upload.wikimedia.org/wikipedia/en/c/c4/Zap_Comix1.jpg");
   background-size: contain;
 */
@@ -165,6 +167,7 @@ body p {
   top: 0px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   font-size: 2rem;
   border: 2px dotted #00407F;
   border-radius: 3%;
@@ -174,7 +177,6 @@ body p {
 }
 
 
-
 /* ----------------------------------------------------------------------------
     Pantheon Section
 ----------------------------------------------------------------------------- */
@@ -182,11 +184,11 @@ body p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  scroll-margin-top: 6.5rem; 
   padding: 1rem 1rem;
   border: 2px dotted #000040;
   border-radius: 3%;
-  width: 100%;
+  margin: 1rem 1rem;
+  scroll-margin-top: 6.5rem; 
 }
 
 .pantheon .items {
@@ -206,7 +208,7 @@ body p {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  width: 45%;
+  width: 40%;
   border: none;
 }
 
@@ -216,6 +218,8 @@ body p {
   height: auto; 
   overflow: hidden;
   border: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
 }
 
 .pantheon img {
@@ -232,8 +236,25 @@ body p {
 }
 
 /* ----------------------------------------------------------------------------
-    Members Section
+    Resources Section
 ----------------------------------------------------------------------------- */
+.resources {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  border: 2px dotted #000040;
+  border-radius: 3%;
+  padding: 1rem 1rem;
+  scroll-margin-top: 6.5rem; 
+}
+
+.resources p {
+  margin: 0.125rem 0.23rem;
+  font-size: 1.5rem;
+}
+
+
 
 /* ----------------------------------------------------------------------------
     Footer Section
