@@ -7,16 +7,32 @@ html {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
 /* ----------------------------------------------------------------------------
     Body Section
 ----------------------------------------------------------------------------- */
 body {
   font-family: 'Patrick Hand SC';    
-  background-color: #80FF80;
+  background-color: #C0C0C0;
 }
 
 body h1 {
   font-size: 3rem;
+  text-shadow: 2px 2px 2px white,
+               4px 4px 2px #070772, 
+               6px 6px 2px #a82727;
 }
 
 body h2 {
@@ -28,15 +44,17 @@ body h2 {
 }
 
 body h3 {
-  font-size: 2.0rem;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   margin: 0.125rem 0rem;
-  color: #2626e2;
+  color: #000036;
   text-shadow: 3px 3px 5px darkgreen;
 }
 
 body h4 {
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   margin: 0.75rem 0rem;
 }
@@ -46,47 +64,6 @@ body p {
   color: #000040;
 }
 
-/* body Media queries */
-
-@media only screen and (max-width: 1000px) {
-  body h1 {
-    font-size: 2.5rem;
-  }
-
-  body h2 {
-    font-size: 1.5rem;
-  }
-
-  body h3 {
-    font-size: 1.5rem;
-  }
-
-  body h4 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 740px) {
-  body h1 {
-    font-size: 2rem;
-  }
-
-  body h2 {
-    font-size: 1.25rem;
-  }
-
-  body h3 {
-    font-size: 1rem;
-  }
-
-  body h4 {
-    font-size: 0.85rem;
-  }
-
-  body p {
-    font-size: 0.75;
-  }
-}
 
 /* ----------------------------------------------------------------------------
     Header Section
@@ -101,7 +78,7 @@ body p {
     width: 100%;
     height: 6rem;
     z-index: 5;
-    background-color: rgba(80,255,80,1.0);
+    background-color: #A0A0A0;
 }
 
 .header .logo {
@@ -132,18 +109,39 @@ body p {
 
 .header nav a {
   position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000040;
+}
+
+.header nav a:hover {
+  color: #008000;
+  text-shadow: 2px 2px 2px #bbdff3;
+  position: relative;
   text-decoration: none;
 }
 
-/* 
-:target::before {
-  content: " ";
-  display: block;
-  height: 6rem; 
-  margin: -6rem 0 0; 
+@media only screen and (max-width: 1200px) {
+  body h1 {
+    font-size: 2.5rem;
+  }
 }
-*/
 
+@media only screen and (max-width: 875px) {
+  body h1 {
+    font-size: 2.0rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body h1 {
+    font-size: 1.5rem;
+  }
+  .header .nav a {
+    font-size: 1rem;
+  }
+}
 /* ----------------------------------------------------------------------------
     Main Section
 ----------------------------------------------------------------------------- */
@@ -154,9 +152,6 @@ body p {
   position: relative;
   top: 8.5rem;
   margin: 1rem 2rem;
- /* background-image: url("https://upload.wikimedia.org/wikipedia/en/c/c4/Zap_Comix1.jpg");
-  background-size: contain;
-*/
 }
 
 /* ----------------------------------------------------------------------------
@@ -168,12 +163,13 @@ body p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 2rem;
-  border: 2px dotted #00407F;
-  border-radius: 3%;
   align-items: center;
+  font-size: 2rem;
+  border: 2px solid black;
+  margin: 1rem 1rem;
+  padding: 0.5rem 2rem;
   scroll-margin-top: 6.5rem;
-  opacity: 0.85;
+  background-color: #A0A0D0;
 }
 
 
@@ -185,10 +181,10 @@ body p {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1rem 1rem;
-  border: 2px dotted #000040;
-  border-radius: 3%;
+  border: 3px solid black;
   margin: 1rem 1rem;
   scroll-margin-top: 6.5rem; 
+  background-color: #A0A0D0;
 }
 
 .pantheon .items {
@@ -201,6 +197,8 @@ body p {
   flex-grow: 1;
   border: none;
   text-align: center;
+  margin: 0px 0px;
+  padding: 0px 0px;
 }
 
 .pantheon .item {
@@ -214,7 +212,7 @@ body p {
 
 .pantheon .image-container {
   max-width: 100%;
-  width: 80%;
+  width: 100%;
   height: auto; 
   overflow: hidden;
   border: none;
@@ -226,13 +224,17 @@ body p {
   display: block;
   min-width: 16.5rem;
   max-width: 16.5rem;
-  width: 16.5 rem;
-  height: 23 rem;
+  width: 16.5rem;
+  height: auto;
   border: none;
 }
 
-.pantheon h3 {
+.pantheon h3, h4 {
   text-align: center;
+}
+
+.pantheon p {
+  font-size: 1.5rem;
 }
 
 /* ----------------------------------------------------------------------------
@@ -243,19 +245,48 @@ body p {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 1rem 1rem;
-  border: 2px dotted #000040;
-  border-radius: 3%;
-  padding: 1rem 1rem;
+  border: 3px solid black;
+  margin: 1rem 1rem;
   scroll-margin-top: 6.5rem; 
+  background-color: #A0A0D0;
+}
+
+.resources h3 {
+  margin-bottom: 0.5rem;
 }
 
 .resources p {
-  margin: 0.125rem 0.23rem;
-  font-size: 1.5rem;
+  margin: 0.33rem 0.23rem;
+  font-size: 1.75rem;
 }
 
+.resources a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000040;
+}
+
+.resources a:hover {
+  color: #008000;
+  text-shadow: 2px 2px 2px #bbdff3;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .pantheon .item {
+    width: 60%;
+  }
+}
 
 
 /* ----------------------------------------------------------------------------
     Footer Section
 ----------------------------------------------------------------------------- */
+.footer {
+  padding: 5rem 5rem;
+  border: 3px solid black;
+  margin: 1rem 1rem;
+  scroll-margin-top: 6.5rem; 
+  background-color: #A0A0D0;
+  opacity: 0.95;
+}
